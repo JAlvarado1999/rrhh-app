@@ -8,7 +8,7 @@ require('dotenv').config();
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:3000", "http://44.223.27.165"],
+    origin: "*",  // Temporalmente para pruebas
     credentials: true
 }));
 // Middleware (igual que tu estructura)
